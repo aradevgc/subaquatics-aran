@@ -1,0 +1,61 @@
+:root {
+    --glass: rgba(255, 255, 255, 0.2);
+    --glass-border: rgba(255, 255, 255, 0.5);
+     --bg-gradient: linear-gradient(180deg, #4FB83C 0%, #22A1A2 100%);
+}
+
+@font-face {
+  font-family: 'Dynamo';
+  src: url('fonts/Dynamo Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Netflix Sans';
+  src: url('fonts/NetflixSans-Blk.ttf') format('truetype');
+}
+
+body{
+    background: var(--bg-gradient);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header{
+     background: var(--glass);
+     backdrop-filter: blur(20px);
+     -webkit-backdrop-filter: blur(20px);
+     border: 1px solid var(--glass-border);
+     border-radius: 30px;
+     padding: 12px 25px;
+     gap: 20px;
+}
+
+header h1{
+  font-family: 'Dynamo', sans-serif;
+  font-size: 60px;
+  font-weight: 900;
+  color: #fff; 
+  text-align: center;
+}
+
+header p{
+    font-family: 'Netflix Sans', sans-serif;
+    font-size: 20px;
+    color: #eee; 
+    text-align: center;
+}
+
+.glass-button {
+    display: inline-block;
+    background: var(--glass);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    border-radius: 30px;
+    padding: 2px 5px;
+}
+
+.glass-button img {
+    width: 32px;
+    height: 32px;
+}
