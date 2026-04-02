@@ -1,12 +1,12 @@
 :root {
     --glass: rgba(255, 255, 255, 0.2);
     --glass-border: rgba(255, 255, 255, 0.5);
-     --bg-gradient: linear-gradient(180deg, #4FB83C 0%, #22A1A2 100%);
+    --bg-gradient: linear-gradient(180deg, #4FB83C 0%, #22A1A2 100%);
 }
 
 @font-face {
   font-family: 'Dynamo';
-  src: url('fonts/Dynamo Regular.ttf') format('truetype');
+  src: url('fonts/Dynamo\ W04\ Bold\ Shadow.ttf') format('truetype');
 }
 
 @font-face {
@@ -20,22 +20,24 @@ body{
     background-attachment: fixed;
 }
 
-header{
-     background: var(--glass);
-     backdrop-filter: blur(20px);
-     -webkit-backdrop-filter: blur(20px);
-     border: 1px solid var(--glass-border);
-     border-radius: 30px;
-     padding: 12px 25px;
-     gap: 20px;
-}
+/* header{
+    background: var(--glass);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    border-radius: 30px;
+    padding: 12px 25px;
+    gap: 20px;
+} */
 
 header h1{
   font-family: 'Dynamo', sans-serif;
-  font-size: 60px;
+  font-size: 100px;
   font-weight: 900;
-  color: #fff; 
+  -webkit-text-stroke: 0.5px #016061;
+  color: #30C1C1; 
   text-align: center;
+  margin-bottom: 5px;
 }
 
 header p{
@@ -43,19 +45,33 @@ header p{
     font-size: 20px;
     color: #eee; 
     text-align: center;
+    margin-top: 5px;
 }
 
-.glass-button {
-    display: inline-block;
-    background: var(--glass);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border: 1px solid var(--glass-border);
-    border-radius: 30px;
-    padding: 2px 5px;
+
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-top: 20px;
+}
+#insta{
+    width: 40px;
+    height: 40px;
 }
 
-.glass-button img {
-    width: 32px;
-    height: 32px;
+#youtube{
+    width: 40px;
+    height: 40px;
+}
+
+#github{
+    width: 40px;
+    height: 40px;
+}
+
+#insta:hover, #youtube:hover, #github:hover{
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
 }
