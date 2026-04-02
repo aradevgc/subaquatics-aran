@@ -49,7 +49,7 @@ header p{
 }
 
 
-div{
+#videos{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -74,4 +74,34 @@ div{
 #insta:hover, #youtube:hover, #github:hover{
     transform: scale(1.2);
     transition: transform 0.3s ease;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+}
+.instagram-media {
+    width: 1080px;
+    height: 720px;
+}
+
+h2{
+    font-family: 'Netflix Sans', sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    color: #ffffff; 
+    text-align: left;
+    margin-left: 5px;
+    margin-top: none;
+}
+.titulo{
+    padding: auto;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    display: inline-block;
+    border: #016061 solid 1px;
+    margin-top: none;
 }
