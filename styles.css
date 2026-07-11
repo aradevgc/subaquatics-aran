@@ -206,10 +206,6 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 460px;
-  border: 1px solid var(--border);
-  border-radius: 32px;
-  background: linear-gradient(135deg, rgba(255,255,255,0.04), rgba(79,184,57,0.08));
-  overflow: hidden;
 }
 
 .visual-showcase__circle {
