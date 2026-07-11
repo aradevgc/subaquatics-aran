@@ -81,6 +81,18 @@ body {
   transition: transform 180ms ease, background 180ms ease, border-color 180ms ease;
 }
 
+.topbar__contact-link {
+  color: var(--text);
+  text-decoration: none;
+  font-family: 'Dynamo', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.topbar__contact-link span {
+  line-height: 1;
+}
+
 .topbar__contact a:hover,
 .topbar__contact a:focus-visible,
 .topbar__icons a:hover,
