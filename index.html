@@ -14,7 +14,7 @@
           <a href="tel:+34600000000" aria-label="Phone">
             <img src="assets/phone.png" alt="Phone" />
           </a>
-          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=redessubaquaticsaran@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Email" class="topbar__contact-link">
+          <a href="mailto:redessubaquaticsaran@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Email" class="topbar__contact-link">
             <span>@</span>
           </a>
         </div>
@@ -38,17 +38,39 @@
           <h2>    Swim. Film. Inspire.</h2>
         </div>
         <p>
-          From concept to launch, we shape content that feels modern, human, and effortless across every touchpoint.
+          Every frame begins in the water. I transform races, training sessions and emotions into cinematic stories that inspire swimmers, clubs and brands. My goal isn’t simply to record what happens—it’s to make people feel it.
         </p>
       </section>
 
-      <section class="visual-showcase" aria-label="Creative composition">
-        <div class="visual-showcase__frame">
-          <img class="visual-showcase__circle" src="assets/placeholder-circle.jpg" alt="Circular visual composition" />
-          <img class="visual-showcase__logo visual-showcase__logo--top" src="assets/davinci.png" alt="DaVinci Resolve logo" />
-          <img class="visual-showcase__logo visual-showcase__logo--right" src="assets/affinity.png" alt="Affinity logo" />
-          <img class="visual-showcase__logo visual-showcase__logo--left" src="assets/blender.png" alt="Blender logo" />
+      <section class="visual-showcase">
+    <div class="visual-showcase__frame">
+
+        <div class="circle-wrapper">
+
+            <video id="showcase-video"
+                class="visual-showcase__circle"
+                autoplay
+                muted
+                loop
+                playsinline>
+            </video>
+
+            <img id="logo-davinci"
+                 class="visual-showcase__logo visual-showcase__logo--top"
+                 src="assets/davinci.png">
+
+            <img id="logo-affinity"
+                 class="visual-showcase__logo visual-showcase__logo--right"
+                 src="assets/affinity.png">
+
+            <img id="logo-blender"
+                 class="visual-showcase__logo visual-showcase__logo--left"
+                 src="assets/blender.png">
+
         </div>
+
+    </div>
+</section>
       </section>
 
       <section id="projects" class="projects">

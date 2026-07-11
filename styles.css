@@ -230,24 +230,48 @@ body {
 }
 
 .visual-showcase__logo {
-  position: absolute;
-  width: 115px;
-  height: 115px;
+  position:absolute;
+  width:115px;
+  height:115px;
+  z-index:10;
+  transition:.2s;
   object-fit: contain;
   filter: drop-shadow(0 8px 20px rgba(0,0,0,0.3));
 }
 
 .visual-showcase__logo--top {
-  top: 10px;
+   left:50%;
+
+    top:50%;
+
+    transform:
+
+        translate(-50%,-175%);
+
 }
 
 .visual-showcase__logo--right {
-  right: 70px;
+  left:50%;
+
+    top:50%;
+
+    transform:
+
+        translate(115%,-15%);
+
 }
 
 .visual-showcase__logo--left {
-  left: 70px;
+  left:50%;
+
+    top:50%;
+
+    transform:
+
+        translate(-215%,-15%);
+
 }
+
 
 .projects {
   margin-top: 0.5rem;
@@ -372,4 +396,92 @@ body {
   .hero h1 {
     font-size: 2.2rem;
   }
+}
+
+.visual-showcase__circle{
+    object-fit:cover;
+}
+
+.visual-showcase__logo{
+    transition:all .45s ease;
+    opacity:.35;
+    transform:scale(.95);
+    border-radius:18px;
+    padding:8px;
+}
+
+.visual-showcase__logo.active{
+    opacity:1;
+    border:2px solid white;
+    box-shadow:0 0 18px rgba(255,255,255,.45);
+    background:transparent;
+}
+
+.visual-showcase__logo{
+    z-index:10;
+
+    transition:
+        transform .4s ease,
+        opacity .4s ease,
+        box-shadow .4s ease,
+        border-color .4s ease;
+
+    opacity:.45;
+
+    border:2px solid transparent;
+
+    border-radius:20px;
+
+    transform:scale(.95);
+}
+
+.circle-wrapper{
+
+    position:relative;
+
+    width:min(320px,70vw);
+
+    aspect-ratio:1;
+}
+
+.visual-showcase__circle{
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    border-radius:50%;
+}
+
+
+
+.visual-showcase__logo--top{
+    top:-45px;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+.visual-showcase__logo--left{
+    left:-55px;
+    top:50%;
+    transform:translateY(-50%);
+}
+
+.visual-showcase__logo--right{
+    right:-55px;
+    top:50%;
+    transform:translateY(-50%);
+}
+
+.visual-showcase__logo--top.active{
+    transform:translateX(-50%) scale(1.08);
+}
+
+.visual-showcase__logo--left.active{
+    transform:translateY(-50%) scale(1.08);
+}
+
+.visual-showcase__logo--right.active{
+    transform:translateY(-50%) scale(1.08);
 }
