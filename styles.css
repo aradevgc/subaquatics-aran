@@ -231,47 +231,14 @@ body {
 
 .visual-showcase__logo {
   position:absolute;
-  width:115px;
-  height:115px;
+  width:36%;
+  aspect-ratio:1;
+  height:auto;
   z-index:10;
   transition:.2s;
   object-fit: contain;
   filter: drop-shadow(0 8px 20px rgba(0,0,0,0.3));
 }
-
-.visual-showcase__logo--top {
-   left:50%;
-
-    top:50%;
-
-    transform:
-
-        translate(-50%,-175%);
-
-}
-
-.visual-showcase__logo--right {
-  left:50%;
-
-    top:50%;
-
-    transform:
-
-        translate(115%,-15%);
-
-}
-
-.visual-showcase__logo--left {
-  left:50%;
-
-    top:50%;
-
-    transform:
-
-        translate(-215%,-15%);
-
-}
-
 
 .projects {
   margin-top: 0.5rem;
@@ -457,19 +424,19 @@ body {
 
 
 .visual-showcase__logo--top{
-    top:-45px;
+  top:-14%;
     left:50%;
     transform:translateX(-50%);
 }
 
 .visual-showcase__logo--left{
-    left:-55px;
+  left:-17%;
     top:50%;
     transform:translateY(-50%);
 }
 
 .visual-showcase__logo--right{
-    right:-55px;
+  right:-17%;
     top:50%;
     transform:translateY(-50%);
 }
